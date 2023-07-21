@@ -1,0 +1,70 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Great Shopping</title>
+  <link rel="stylesheet" type="text/css" href="home-page.component.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+</head>
+<body>
+  <router-outlet></router-outlet>
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="https://imgstoragesacc.blob.core.windows.net/brandimage/logo.png" width="125px">
+        </div>
+        <nav>
+          <img src="https://imgstoragesacc.blob.core.windows.net/brandimage/cart.png" width="30px" height="30px">
+
+          <ul>
+
+            <li><a href="/">Home</a></li>
+            <li><a href="/customer/login/">Login</a></li>
+            <li><a href="/customer/signup/">Signup</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <h1>
+            One stop Solution
+            For Mobiles!
+          </h1>
+          <p>sucess isnt always about greatness.its about consistency.</p>
+          <a href="" class="btn">Explore Now &#8594;</a>
+        </div>
+        <div class="col-2"></div>
+        <img src="https://imgstoragesacc.blob.core.windows.net/brandimage/mobile.jpg">
+      </div>
+    </div>
+  </div>
+
+
+  <!-------- featured categories --------->
+  <app-brand-list></app-brand-list>
+  <!-------- featured products --------->
+  <app-product-featured-list></app-product-featured-list>
+ 
+
+  <!------testimonial------>
+  <div class="testimoial">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-3">
+          <p>
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------brands-------->
+  <!--------footer------>
+  <!--<app-footer></app-footer>-->
+</body>
+</html>

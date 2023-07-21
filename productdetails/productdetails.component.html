@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width:device-width,initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="productdetails.component.css">
+  <title> Product details</title>
+</head>
+<body>
+  <a href="/">back to home</a>
+  <div class="small-container single-product">
+    <div class="row">
+      <div class="col-2" *ngFor="let product of Dproducts">
+        <img src={{product.img_url}} width="100%" id="productImg">
+
+
+
+      </div>
+      <div class="col-2" *ngFor="let product of Dproducts">
+        <h2>{{product.title}}</h2>
+
+        <h4>purchased_price:<s>{{product.purchase_price}}</s></h4>
+        <div>
+          <h4> saleprice:{{product.saleprice}}</h4>
+
+
+          <h4>{{product.processor}}</h4>
+          <h4>ram:{{product.ram}}GB</h4>
+          <h4>rom:{{product.rom}}GB</h4>
+          <h4>primarycamera:{{product.primarycamera}}MP</h4>
+          <h4>frontcamera:{{product.frontcamera}}MP</h4>
+          <h4>Battery:{{product.battery}}MAH</h4>
+
+          <a href="" class="btn">Add to cart</a>
+          <a href="" class="btn">Buy </a>
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>
